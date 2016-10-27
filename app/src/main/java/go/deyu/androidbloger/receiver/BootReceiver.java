@@ -1,4 +1,4 @@
-package go.deyu.anroidbloger.receiver;
+package go.deyu.androidbloger.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

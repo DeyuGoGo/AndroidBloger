@@ -1,4 +1,4 @@
-package go.deyu.anroidbloger;
+package go.deyu.androidbloger;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;

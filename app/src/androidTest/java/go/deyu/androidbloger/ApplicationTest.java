@@ -1,4 +1,4 @@
-package go.deyu.anroidbloger;
+package go.deyu.androidbloger;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
