@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lock"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="go.deyu.androidbloger.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:context="go.deyu.androidbloger.LockActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:text="鎖住功能鍵"
+    <ToggleButton
+        android:text="LockBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="goToLockActivity"/>
+        android:textOn="鎖定Back"
+        android:id="@+id/tbtn_back" />
+
+    <ToggleButton
+        android:text="LockTaskMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbtn_task"
+        android:textOn="鎖定TaskMenu"
+        android:checked="false" />
 </LinearLayout>
