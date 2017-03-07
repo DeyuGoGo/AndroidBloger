@@ -1,0 +1,40 @@
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+ext {
+  //Android
+  androidBuildToolsVersion = "25.0.1"
+  androidSupportToolVersion = "25.2.0"
+  androidMinSdkVersion = 18
+  androidTargetSdkVersion = 25
+  androidCompileSdkVersion = 25
+  //Libraries
+  gsonVersion = '2.7'
+  butterKnifeVersion = '8.4.0'
+
+  appDependencies = [
+      gson:               "com.google.code.gson:gson:${gsonVersion}",
+      butterKnife:        "com.jakewharton:butterknife:${butterKnifeVersion}",
+      butterKnifeCompiler:"com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+      androidAppcompat:   "com.android.support:appcompat-v7:${androidSupportToolVersion}",
+      androidDesign:      "com.android.support:design:${androidSupportToolVersion}",
+      androidAnnotations: "com.android.support:support-annotations:${androidSupportToolVersion}"
+  ]
+
+  appTestDependencies = [
+      androidAnnotations: "com.android.support:support-annotations:${androidSupportToolVersion}"
+  ]
+
+  dataDependencies = [
+      androidAppcompat:   "com.android.support:appcompat-v7:${androidSupportToolVersion}",
+      gson:               "com.google.code.gson:gson:${gsonVersion}"
+  ]
+
+  dataTestDependencies = [
+      androidAnnotations: "com.android.support:support-annotations:${androidSupportToolVersion}"
+  ]
+
+}
