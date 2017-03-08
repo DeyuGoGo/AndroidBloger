@@ -40,7 +40,7 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".MapActivity"/>
+        <activity android:name=".LocationActivity"/>
     </application>
 
 </manifest>

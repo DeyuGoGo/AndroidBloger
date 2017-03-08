@@ -19,7 +19,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MapActivity extends AppCompatActivity implements View.OnClickListener {
+public class LocationActivity extends AppCompatActivity implements View.OnClickListener {
 
     /*    記得在你的manifests上增加：
         <activity android:name=".MapActivityActivity"/>
@@ -52,7 +52,7 @@ public class MapActivity extends AppCompatActivity implements View.OnClickListen
         final LocationManager mLocation = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         //判斷當前是否已經獲得了定位權限
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED){
-            Toast.makeText(MapActivity.this,"權限沒開",Toast.LENGTH_SHORT).show();
+            Toast.makeText(LocationActivity.this,"權限沒開",Toast.LENGTH_SHORT).show();
 //            如果是6.0以上的去需求權限
             requestCameraPermission();
             return;
@@ -67,7 +67,7 @@ public class MapActivity extends AppCompatActivity implements View.OnClickListen
                         .append("lng : " + location.getLongitude());
                 textView.setText("lat : " + location.getLatitude());
                 textView2.setText("lng : " + location.getLongitude());
-                Toast.makeText(MapActivity.this,sb.toString(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(LocationActivity.this,sb.toString(),Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -80,7 +80,7 @@ public class MapActivity extends AppCompatActivity implements View.OnClickListen
 
             public void onProviderDisabled(final String s) {
             }
-        },  MapActivity.this.getMainLooper());
+        },  LocationActivity.this.getMainLooper());
     }
     private void requestCameraPermission(){
         if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.M)

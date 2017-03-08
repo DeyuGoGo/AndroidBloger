@@ -28,6 +28,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToMapActivity(View v){
-        startActivity(new Intent(this,MapActivity.class));
+        startActivity(new Intent(this,LocationActivity.class));
     }
 }
