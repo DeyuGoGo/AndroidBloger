@@ -15,6 +15,7 @@
         android:text="LockBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textOff="不鎖定Back"
         android:textOn="鎖定Back"
         android:id="@+id/tbtn_back" />
 
@@ -23,6 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tbtn_task"
+        android:textOff="不鎖定TaskMenu"
         android:textOn="鎖定TaskMenu"
         android:checked="false" />
 </LinearLayout>

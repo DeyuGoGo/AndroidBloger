@@ -14,9 +14,15 @@
     tools:showIn="@layout/activity_main">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_lock"
         android:text="鎖住功能鍵"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="goToLockActivity"/>
+    <Button
+        android:id="@+id/btn_map"
+        android:text="定位"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToMapActivity"/>
 </LinearLayout>

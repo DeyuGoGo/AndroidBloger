@@ -26,4 +26,8 @@ public class MainActivity extends AppCompatActivity {
     public void goToLockActivity(View v){
         startActivity(new Intent(this,LockActivity.class));
     }
+
+    public void goToMapActivity(View v){
+        startActivity(new Intent(this,MapActivity.class));
+    }
 }
