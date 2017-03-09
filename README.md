@@ -4,4 +4,4 @@
 
 定位範例(LoactionActivity)：
 
-![alt text](https://github.com/DeyuGoGo/AndroidBloger/blob/master/location.png?raw=true "location ")
+<img src="https://github.com/DeyuGoGo/AndroidBloger/blob/master/location.png?raw=true"  width="49%" height="30%">
