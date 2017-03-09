@@ -25,4 +25,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="goToMapActivity"/>
+    <Button
+        android:id="@+id/btn_copy"
+        android:text="複製"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToCopyActivity"/>
 </LinearLayout>

@@ -30,4 +30,7 @@ public class MainActivity extends AppCompatActivity {
     public void goToMapActivity(View v){
         startActivity(new Intent(this,LocationActivity.class));
     }
+    public void goToCopyActivity(View v){
+        startActivity(new Intent(this,CopyActivity.class));
+    }
 }

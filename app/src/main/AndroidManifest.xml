@@ -6,8 +6,11 @@
     <!-- 開機事件 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!-- 鎖定Task Menu -->
     <uses-permission android:name="android.permission.REORDER_TASKS" />
+
     <!-- 宣告為桌面App -->
     <!-- <category android:name="android.intent.category.HOME" /> -->
     <!-- <category android:name="android.intent.category.DEFAULT" /> -->
@@ -40,7 +43,8 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".LocationActivity"/>
+        <activity android:name=".LocationActivity" />
+        <activity android:name=".CopyActivity"></activity>
     </application>
 
 </manifest>
